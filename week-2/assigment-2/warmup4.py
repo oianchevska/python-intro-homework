@@ -1,7 +1,7 @@
-
-age = input("Enter your age: ")
-next_year = age + 1
-print(next_year)
+# Code I run:
+# age = input("Enter your age: ")
+# next_year = age + 1
+# print(next_year)
 
 # Error message:
 # TypeError: can only concatenate str (not "int") to str
