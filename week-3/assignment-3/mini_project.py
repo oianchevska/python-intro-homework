@@ -42,4 +42,4 @@ else:
         elif time == 'evening':
             print(f"Suggestion: {day} {time} It's a great time to try a new local restaurant!") 
     else:
-         print('Try Monday, Tuesday, Friday, or Saturday! Suggestions for the other days are coming soon.')
+         print('Suggestions are currently available for Monday, Tuesday, Friday, and Saturday. More days are coming soon!')
