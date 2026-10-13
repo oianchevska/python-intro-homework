@@ -5,6 +5,9 @@ time = input("What time of day? ").strip().lower()
 
 if day not in ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"):
     print("Sorry, I don't recognize that day. Try: Monday, Tuesday, Wednesday...")
+elif time not in ("morning", "afternoon", "evening"):    
+    print("Sorry, I don't recognize that time. Try: morning, afternoon, evening...")    
+
 else:
 
     if day == 'Monday':
@@ -38,4 +41,5 @@ else:
             print(f'Suggestion: {day} {time} - Take your dog for a walk and enjoy the sunshine!')
         elif time == 'evening':
             print(f"Suggestion: {day} {time} It's a great time to try a new local restaurant!") 
-
+    else:
+         print('Try Monday, Tuesday, Friday, or Saturday! Suggestions for the other days are coming soon.')

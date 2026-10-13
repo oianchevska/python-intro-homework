@@ -14,4 +14,4 @@ else:
     grade = "F"
 
 print(f"Score: {score}")
-print(f"Score: {grade}")
+print(f"Grade: {grade}")
