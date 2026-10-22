@@ -11,7 +11,7 @@ students = [
 
 # Find the top scorer
 max_score =  students[0]["score"]
-name = []
+name = students[0]["name"]
 for student in students:
     if max_score < student["score"]:
         max_score= student["score"]
