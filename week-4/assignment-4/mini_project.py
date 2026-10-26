@@ -7,22 +7,27 @@ students = [
     {"name": "Devon",   "score": 72, "subject": "Python"},
     {"name": "Mia",     "score": 83, "subject": "Web"},
     {"name": "Eli",     "score": 79, "subject": "Data"},
+    {"name": "Test",     "score": 95, "subject": "Data"}
 ]
 
 # Find the top scorer
-max_score =  students[0]["score"]
-name = students[0]["name"]
+max_score = students[0]["score"]
+name = []
+
 for student in students:
     if max_score < student["score"]:
-        max_score= student["score"]
-        name = student["name"]
-print (f"Top scorer:  {name} ({(max_score)})")
+        max_score = student["score"]
+        name = [student["name"]]
+    elif max_score == student["score"]:
+        name.append(student["name"])
+
+print(f"Top scorer: {name} ({max_score})")
 
 # Calculate the class average
 total = 0
 for student in students:
     total += student["score"]
-average = total / len(students)
+average = round((total / len(students)),2)
 print(f"Class average: {average}")
 
 # List all unique subjects
