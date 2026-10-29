@@ -1,6 +1,6 @@
 # Warmup 4: FizzBuzz
 
-for i in range (0,31):
+for i in range (1,31):
     if i % 3 == 0 and i % 5 == 0:
         print(f"{i} - FizzBuzz")
     elif i % 3 == 0:
