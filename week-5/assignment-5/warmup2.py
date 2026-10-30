@@ -3,8 +3,6 @@
 while True:
     try:
         user_input = int(input("Enter a positive integer: "))
-
-        print ("That's not a positive integer. Try again.")
         if  user_input > 0:
             print(f"Got it: {user_input}")  
             break
