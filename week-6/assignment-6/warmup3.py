@@ -1,8 +1,8 @@
 # Warmup 3: Scope in Action
 
-def show_name():
-    name = "Hello My name is Sasha"
-    print(name)
+#def show_name():
+    #name = "Hello My name is Sasha"
+    #print(name)
 
 # show_name()
 
