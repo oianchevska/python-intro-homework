@@ -4,9 +4,9 @@ def show_name():
     name = "Hello My name is Sasha"
     print(name)
 
-show_name()
+# show_name()
 
-print(name)
+# print(name)
 
 # ERROR: NameError: name 'name' is not defined
 
@@ -14,4 +14,5 @@ def show_name():
     name = "Hello My name is Sasha"
     return name
 
-print(show_name())
+result = show_name()
+print(result)

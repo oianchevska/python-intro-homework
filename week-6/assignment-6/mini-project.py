@@ -9,7 +9,7 @@ def find_min(n):
         if num < num_min:
             num_min = num
 
-    return (f"Minimum number: {num_min}")
+    return num_min
 
 # find_max(numbers)
 def find_max(n):
@@ -19,7 +19,7 @@ def find_max(n):
         if num > num_max:
             num_max = num
 
-    return (f"Maximum number: {num_max}")
+    return num_max
 
 # Search for a number
 def search (n, target):
@@ -31,7 +31,7 @@ def search (n, target):
             index = num
             break
 
-    return (f"Found {target} at index {index}.")
+    return index
 
 # bubble_sort
 def bubble_sort(n):
@@ -83,8 +83,12 @@ def main():
         # Search for a number
         elif user_input == 3:
             target = int(input("Please enter a number: "))
-            print (search(numbers, target))
-
+            index = search(numbers, target)
+            if index == -1:
+                print("Not found")
+            else:
+                print(f"Found at index {index}")
+            
         # Bubble Sort
         elif user_input == 4:           
             print(bubble_sort(numbers))
