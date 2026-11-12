@@ -15,20 +15,16 @@ with open('C:/Users/19197/OneDrive/Documents/Code The Dream/python_class/python_
     reader = list(csv.DictReader(file))
     for row in reader:
         row['amount'] = float(row['amount'])
-        #print (row)
    
 # 4 filter to food
     food = [row for row in reader if row['category'] == 'Food']
-    #print('-----------------------------------')
-    #print (food)         
+         
 # Calculate the total amount spent on Food.
-    total = 0
-    now = datetime.now()
-    print (f'Food Expense Report — generated {now.strftime("%B %d, %Y")}')
-    for i in food:
-        total += i['amount']
-        print(f"{i['date']}: ${i['amount']}")
-     
-    
-    print(f'Total: ${total}')
-    
+    with open('C:/Users/19197/OneDrive/Documents/Code The Dream/python_class/python_homework/python-intro-homework/week-7/data/food_report.txt', 'w') as file:
+        total = 0
+        now = datetime.now()
+        file.write (f'Food Expense Report — generated {now.strftime("%B %d, %Y")}\n')
+        for i in food:
+            total += i['amount']
+            file.write(f"{i['date']}: ${i['amount']:.2f}\n") 
+        file.write(f'Total: ${total:.2f}')
