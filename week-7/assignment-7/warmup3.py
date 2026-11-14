@@ -7,4 +7,7 @@ if os.path.exists("python-intro-homework/week-7/data/expenses.csv"):
 else:
     print("expenses.csv not found.")
 
+file_path = os.path.join("python-intro-homework","week-7","data", "expenses.csv")
+print(file_path) 
+
 
