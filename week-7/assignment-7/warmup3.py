@@ -1,15 +1,10 @@
 # Warmup 3: Use the os Module
 import os
-print(f'YOU ARE HERE: {os.getcwd()}')  # e.g., /Users/yourname/projects
+print(f'{os.getcwd()}')  # e.g., /Users/yourname/projects
+
 if os.path.exists("python-intro-homework/week-7/data/expenses.csv"):
-    print("Found it!")
+    print("expenses.csv found.")
 else:
-    print("File not found.")
-
-file_path = os.path.join("python-intro-homework","week-7","data", "expenses.csv")
-print(file_path)   
-
-
-print(os.path.exists(file_path)) 
+    print("expenses.csv not found.")
 
 
