@@ -12,7 +12,7 @@ try:
             rows_attempted += 1
 
             if None in row:
-                #print(f"Row {row_number}: extra column detected — skipped")
+                print(f"Row {row_number}: extra column detected — skipped")
                 skipped_rows += 1
                 continue
 
@@ -20,7 +20,7 @@ try:
                 row['amount'] = float(row['amount'])
                 clean_data.append(row)
 
-            except ValueError as e:
+            except (ValueError, KeyError) as e:
                 skipped_rows += 1
                 print(f"Row {row_number}: {type(e).__name__}: {e}")
                 #print(f"Skipping invalid row {row_number}")
